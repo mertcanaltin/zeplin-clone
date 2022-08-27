@@ -1,10 +1,18 @@
 .logos{
     justify-content:center;
-    margin-right: -3.75rem;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: -1.5rem;
     margin-top: 4rem;
+
+    @media (min-width:641px) {
+        margin-right: -3.75rem;
+    }
+
+    @media (min-width:320px)  { 
+        margin-left: 3rem;
+    }
+
 
     .logo{
         margin-right: 3.75rem;
@@ -21,7 +29,7 @@
     max-width: 27rem;
 
     a {
-        display: inline;
+        display: block;
         line-height: 1.5rem;
         color: #419bf9;
         font-size: 1.125rem;

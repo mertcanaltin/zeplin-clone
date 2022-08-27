@@ -4,7 +4,13 @@
         margin-top: 1.5rem;
         margin-left: auto;
         margin-right: auto;
-        width: calc(100% - 41rem);
+        
+        @media (min-width:320px)  { 
+            width: fit-content;
+        }
+        @media (min-width:641px) {
+            width: calc(100% - 41rem);
+        }
     }
 
     &-logo-zeplin {
@@ -28,6 +34,13 @@
             }
             li:last-child {
                 color: #439df9;
+            }
+
+            @media (min-width:320px)  { 
+                display: none;
+             }
+             @media (min-width:641px) {
+                display: block;
             }
         }
 
